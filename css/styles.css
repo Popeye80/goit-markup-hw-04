@@ -372,29 +372,25 @@ p {
   padding-bottom: 30px;
   padding-top: 30px;
 }
+
 /* Клиенты */
 .clients-item {
-  width: 170px;
-  height: 92px;
+  display: inline-block;
   border: 1px solid var(--icon-border-color);
-  box-sizing: border-box;
+  padding: 16px 32px;
   border-radius: 4px;
 }
-.clients-item:hover {
-  border: 1px solid var(--back-ground-color);
-}
-
 .clients-link-icon {
+  fill: var(--icon-border-color);
   width: 106px;
   height: 60px;
-  display: block;
-  margin: 16px 32px;
-  fill: var(--icon-border-color);
 }
-.clients-link-icon:hover,
-.clients-link-icon:focus {
+.clients-item:hover,
+.clients-item:hover svg {
   fill: var(--back-ground-color);
+  border-color: var(--back-ground-color);
 }
+
 /* футер */
 .footer {
   background-color: var(--hero-color);
@@ -424,11 +420,41 @@ p {
   color: var(--footer-background-color);
 }
 /* Соц.сети */
-.networks-title {
-  font-weight: 70;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--secondary-text-color);
+
+/*.networks-list {
+  width: 206px;
+  height: 44px;
+  border: 1px solid red;
+   box-sizing: border-box;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+}
+.networks-link-icon {
+  width: 44px;
+  height: 44px;
+  display: block;
+  padding: 0;
+  fill: currentColor;
+  /* fill: var(--icon-border-color); 
+  /* color: var(--icon-border-color); 
+}
+.networks-link-icon:hover {
+  fill: red;
+}
+.networks-link {
+  display: flex;
+  justify-content: space-between;
+  color: var(--icon-border-color);
+  background-color: var(--secondary-text-color);
+}
+.networks-link:hover {
+  color: #2196f3;
+}*/
+
+.aaaa {
+  fill: red;
+  background-color: white;
+  color: aqua;
 }
