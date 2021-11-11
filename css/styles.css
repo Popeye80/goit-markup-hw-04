@@ -400,9 +400,7 @@ p {
 .footer .footer-nav-item:not(:last-child) {
   margin-bottom: 9px;
 }
-/*.address {
-  padding-left: 143px;
-}*/
+
 .footer-nav .footer-nav-link {
   font-size: 14px;
   line-height: 1.7;
@@ -482,7 +480,7 @@ p {
   fill: #fff;
 }
 
-.social-block__link--inversed {
+.social-inversed {
   background-color: transparent;
   fill: #afb1b8;
 }
