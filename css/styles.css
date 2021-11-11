@@ -17,6 +17,7 @@ html {
   --footer-background-color: rgba(255, 255, 255, 0.6);
   --command-fon: #f5f4fa;
   --works-bg-color: #eeeeee;
+  --icon-border-color: #afb1b8;
 }
 
 body {
@@ -67,7 +68,6 @@ p {
 /* хэдер */
 .header {
   background-color: var(--secondary-text-color);
-  border-bottom: 2px solid var(--border-line-color);
 }
 .logo {
   font-family: Raleway;
@@ -92,7 +92,8 @@ p {
 .benefits,
 .classes-item,
 .command-name,
-.filter {
+.filter,
+.clients-permanent {
   display: flex;
   align-items: center;
 }
@@ -112,7 +113,7 @@ p {
   width: 16px;
   height: 12px;
   background-position: center;
-  background-image: url(../images/envelope2.png);
+  background-image: url(../images/envelope.svg);
 }
 .contacts .icon-smartphone::before {
   display: inline-block;
@@ -120,7 +121,7 @@ p {
   width: 10px;
   height: 16px;
   background-position: center;
-  background-image: url(../images/smartphone2.png);
+  background-image: url(../images/smartphone.svg);
 }
 .menu .menu-item:not(:last-child),
 .contacts .contacts-item:not(:last-child) {
@@ -128,7 +129,8 @@ p {
 }
 .benefits .benefits-item:not(:last-child),
 .classes-item .classes-img:not(:last-child),
-.command-name .command-img:not(:last-child) {
+.command-name .command-img:not(:last-child),
+.clients-item:not(:last-child) {
   margin-right: 30px;
 }
 .filter-item:not(:last-child) {
@@ -258,16 +260,16 @@ p {
   margin-bottom: 30px;
 }
 .icon-antenna::before {
-  background-image: url(../images/antenna1.svg);
+  background-image: url(../images/antenna.svg);
 }
 .icon-clock::before {
-  background-image: url(../images/clock1.svg);
+  background-image: url(../images/clock.svg);
 }
 .icon-diagram::before {
-  background-image: url(../images/diagram1.svg);
+  background-image: url(../images/diagram.svg);
 }
 .icon-astronaut::before {
-  background-image: url(../images/astronaut1.svg);
+  background-image: url(../images/astronaut.svg);
 }
 
 /* работы */
@@ -338,7 +340,8 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.command {
+.command,
+.clients {
   margin-bottom: 50px;
   margin-top: 0;
   font-weight: 700;
@@ -349,6 +352,7 @@ p {
 }
 .command-name-title {
   margin-top: 0;
+  text-align: center;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -358,6 +362,7 @@ p {
 .command-name-text {
   margin-top: 0;
   margin-bottom: 0;
+  text-align: center;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -367,10 +372,29 @@ p {
   padding-bottom: 30px;
   padding-top: 30px;
 }
-/* .command-name li { 
-  background-color: var(#f5f4fa);
- } */
+/* Клиенты */
+.clients-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-border-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.clients-item:hover {
+  border: 1px solid var(--back-ground-color);
+}
 
+.clients-link-icon {
+  width: 106px;
+  height: 60px;
+  display: block;
+  margin: 16px 32px;
+  fill: var(--icon-border-color);
+}
+.clients-link-icon:hover,
+.clients-link-icon:focus {
+  fill: var(--back-ground-color);
+}
 /* футер */
 .footer {
   background-color: var(--hero-color);
@@ -380,9 +404,9 @@ p {
 .footer .footer-nav-item:not(:last-child) {
   margin-bottom: 9px;
 }
-.address {
+/*.address {
   padding-left: 143px;
-}
+}*/
 .footer-nav .footer-nav-link {
   font-size: 14px;
   line-height: 1.7;
@@ -398,4 +422,13 @@ p {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--footer-background-color);
+}
+/* Соц.сети */
+.networks-title {
+  font-weight: 70;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
 }
