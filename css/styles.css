@@ -452,9 +452,41 @@ p {
 .networks-link:hover {
   color: #2196f3;
 }*/
+.social-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 
-.aaaa {
-  fill: red;
-  background-color: white;
-  color: aqua;
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid red;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #2196f3;
+  fill: #fff;
+}
+
+.social-block__link--inversed {
+  background-color: transparent;
+  fill: #afb1b8;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
