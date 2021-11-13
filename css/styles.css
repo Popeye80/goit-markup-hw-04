@@ -424,6 +424,9 @@ ul {
   font-style: normal;
   margin-top: 20px;
 }
+.footer-address:not(:last-child) {
+  margin-right: 70px;
+}
 .footer-nav .footer-nav-links {
   font-size: 14px;
   line-height: 1.7;
@@ -447,7 +450,7 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .social-link:hover,
@@ -464,6 +467,7 @@ ul {
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
+/* присоединяйтесь */
 .join-title {
   font-weight: 700;
   font-size: 14px;
@@ -477,12 +481,9 @@ ul {
 }
 .footer-main {
   display: flex;
-  align-items: bottom;
+  /* align-items: bottom; */
 }
 .join {
   display: flex;
   align-items: center;
-}
-.footer-address:not(:last-child) {
-  margin-right: 70px;
 }
