@@ -69,7 +69,6 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
   border: 1px solid red;
-  flex-grow: 1;
 }
 
 /* хэдер */
@@ -111,9 +110,15 @@ ul {
 .header-contacts {
   margin-left: auto;
 }
-.contacts-link-icon {
-  width: 30px;
-  height: 30px;
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #2196f3;
+}
+
+.contacts-item .contacts-link-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 /*.contacts .icon-envelope::before {
   display: inline-block;
