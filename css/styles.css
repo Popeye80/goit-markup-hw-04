@@ -432,37 +432,6 @@ ul {
 }
 /* Соц.сети */
 
-/*.networks-list {
-  width: 206px;
-  height: 44px;
-  border: 1px solid red;
-   box-sizing: border-box;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 16px;
-}
-.networks-link-icon {
-  width: 44px;
-  height: 44px;
-  display: block;
-  padding: 0;
-  fill: currentColor;
-  /* fill: var(--icon-border-color); 
-  /* color: var(--icon-border-color); 
-}
-.networks-link-icon:hover {
-  fill: red;
-}
-.networks-link {
-  display: flex;
-  justify-content: space-between;
-  color: var(--icon-border-color);
-  background-color: var(--secondary-text-color);
-}
-.networks-link:hover {
-  color: #2196f3;
-}*/
 .social {
   display: flex;
   justify-content: center;
@@ -494,4 +463,26 @@ ul {
 
 .social-item:not(:last-child) {
   margin-right: 10px;
+}
+.join-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  font-style: normal;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+.footer-main {
+  display: flex;
+  align-items: bottom;
+}
+.join {
+  display: flex;
+  align-items: center;
+}
+.footer-address:not(:last-child) {
+  margin-right: 70px;
 }
