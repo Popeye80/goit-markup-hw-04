@@ -74,7 +74,9 @@ ul {
 /* хэдер */
 .header {
   background-color: var(--secondary-text-color);
+  border-bottom: 2px solid var(--border-line-color);
 }
+
 .logo {
   font-family: Raleway;
   font-weight: 700;
